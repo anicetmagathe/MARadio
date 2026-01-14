@@ -1,4 +1,4 @@
-package com.anet
+package com.anet.maradio
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

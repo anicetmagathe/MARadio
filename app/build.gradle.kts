@@ -8,7 +8,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anet"
+    namespace = "com.anet.maradio"
 
     defaultConfig {
         applicationId = "com.anet"
@@ -44,4 +44,7 @@ dependencies {
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.core.splashscreen)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.ui.compose.material3)
 }

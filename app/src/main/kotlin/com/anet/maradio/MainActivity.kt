@@ -1,18 +1,14 @@
-package com.anet
+package com.anet.maradio
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.anet.maradio.navigation.MainNavigation
 import core.designsystem.theme.AppTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -24,33 +20,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             AppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ProjectName(
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    MainNavigation(modifier = Modifier.fillMaxSize().padding(innerPadding))
                 }
             }
         }
-    }
-}
-
-@Composable
-fun ProjectName(modifier: Modifier = Modifier) {
-    Box(
-        modifier = modifier.fillMaxSize(),
-        contentAlignment = Alignment.Center
-    ) {
-        Text(
-            text = "AndroidProjectTemplate",
-            modifier = modifier
-        )
-    }
-
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AppTheme {
-        ProjectName()
     }
 }
