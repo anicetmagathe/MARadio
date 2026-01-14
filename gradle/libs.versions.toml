@@ -64,6 +64,7 @@ okhttp = "5.3.2"
 protobuf = "4.33.1"
 protobufPlugin = "0.9.5"
 protobufJavalite = "4.33.1"
+radiobrowser4j = "3.3.0"
 retrofit = "3.0.0"
 retrofitKotlinxSerializationJson = "1.0.0"
 retrofitVersion = "3.0.0"
@@ -162,6 +163,7 @@ okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor",
 protobuf-kotlin-lite = { group = "com.google.protobuf", name = "protobuf-kotlin-lite", version.ref = "protobuf" }
 protobuf-javalite = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobufJavalite" }
 protobuf-protoc = { group = "com.google.protobuf", name = "protoc", version.ref = "protobuf" }
+radiobrowser4j = { module = "de.sfuhrm:radiobrowser4j", version.ref = "radiobrowser4j" }
 retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-kotlin-serialization = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlinx-serialization-converter", version.ref = "retrofitKotlinxSerializationJson" }
 robolectric = { group = "org.robolectric", name = "robolectric", version.ref = "robolectric" }
