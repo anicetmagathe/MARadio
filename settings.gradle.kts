@@ -21,7 +21,7 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AndroidProjectTemplate"
+rootProject.name = "MARadio"
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
