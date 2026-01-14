@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "mg.template.datastore";
+option java_multiple_files = true;
+
+message TemplatePreferences {
+  uint64 integer_value = 1;
+  string string_value = 2;
+  bool boolean_value = 3;
+}
